@@ -5,28 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roseta</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <div>
+    <header>
+        <nav class="nav flex">
+            <div class="right_nav flex">
                 <img src="./img/img_header_logo.png" alt="" class="logo">
-                <ul>
-                    <li>
+                <ul class="menu flex ">
+                    <li class="menu__item">
                         <a href="#">Home</a>
                     </li>
-                    <li>
+                    <li class="menu__item">
                         <a href="#">Catálogo</a>
                     </li>
-                    <li>
+                    <li class="menu__item">
                         <a href="#">Tienda Virtual</a>
                     </li>
-                    <li>
+                    <li class="menu__item">
                         <a href="#">Contáctanos</a>
                     </li>
                 </ul>
             </div>
-            <ul>
+            <ul class="left_nav flex">
                 <li>
                     <a href="#">
                         <img src="./img/icon_header_search.png" alt="">
@@ -47,13 +52,20 @@
     </header>
     
     <section class="banner">
-        <img src="./img/img_banner_v1.png" alt="">
-        <img src="./img/img_banner_cover.png" alt="">
-        <h1 class="Title">Bienvenidas</h1>
-        <h2>Ropa de calidad, hecha con el corazón</h2>
+        <div class="banner__background">
+            <img src="./img/img_banner_v1.png" alt="" id="banner_background">
+            <img src="./img/img_banner_cover.png" alt="" id="banner_cover">
+        </div>
+        <div class="banner__content">
+            <h1 class="Title">Bienvenidas</h1>
+            <h2>Ropa de calidad, hecha con el corazón</h2>
+        </div>
     </section>
 
     <section  class="carsl">
+        <div>
+            <h2>Categorías</h2>
+        </div>
         <div>
             <button>
                 <img src="./img/icon_carsl_arrow_left.png" alt="">
