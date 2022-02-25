@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+html, body{
+    font-family: 'Outfit', sans-serif;
+}
+
+header{
+    padding: 20px;
+    height: 10%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Util */
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.nav{
+    justify-content: space-between;
+    width: 100%;
+}
+
+.right_nav{
+    width: 58%;
+    justify-content: space-between;
+}
+
+.menu{
+    width: 60%;
+    justify-content: space-between;
+}
+
+.menu *{
+    color: #D183C9;
+}
+
+.left_nav{
+    width: 10%;
+    justify-content: space-between;
+}
+
+.banner *{
+    width: 100%;
+}
+
+#banner_background{
+    position: relative;
+}

@@ -5,26 +5,122 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roseta</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     <header>
-        <nav class="nav">
-            <div>
+        <nav class="nav flex">
+            <div class="right_nav flex">
                 <img src="./img/img_header_logo.png" alt="" class="logo">
+                <ul class="menu flex ">
+                    <li class="menu__item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#">Catálogo</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#">Tienda Virtual</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#">Contáctanos</a>
+                    </li>
+                </ul>
             </div>
-            <ul>
+            <ul class="left_nav flex">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#">
+                        <img src="./img/icon_header_search.png" alt="">
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Catálogo</a>
+                    <a href="#">
+                        <img src="./img/icon_header_user.png" alt="">
+                    </a>
                 </li>
                 <li>
-                    <a href="#"></a>
+                    <a href="#">
+                        <img src="./img/icon_header_shop.png" alt="">
+                    </a>
                 </li>
-                <li></li>
             </ul>
         </nav>
     </header>
+    
+    <section class="banner">
+        <div class="banner__background">
+            <img src="./img/img_banner_v1.png" alt="" id="banner_background">
+            <img src="./img/img_banner_cover.png" alt="" id="banner_cover">
+        </div>
+        <div class="banner__content">
+            <h1 class="Title">Bienvenidas</h1>
+            <h2>Ropa de calidad, hecha con el corazón</h2>
+        </div>
+    </section>
+
+    <section  class="carsl">
+        <div>
+            <h2>Categorías</h2>
+        </div>
+        <div>
+            <button>
+                <img src="./img/icon_carsl_arrow_left.png" alt="">
+            </button>
+            <button>
+                <img src="./img/icon_carsl_arrow_right.png" alt="">
+            </button>
+        </div>
+        <ol>
+            <li>
+                <a href="#">
+                    <img src="./img/img_carsl_kimono.png" alt="">
+                </a>
+                <h2 class="img_title">Kimonos</h2>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/img_carsl_top.png" alt="">
+                </a>
+                <h2 class="img_title">Blusas</h2>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/img_carsl_pant.png" alt="">
+                </a>
+                <h2 class="img_title">Pantalones</h2>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/img_carsl_outfit.png" alt="">
+                </a>
+                <h2 class="img_title">Conjuntos</h2>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/img_carsl_dress.png" alt="">
+                </a>
+                <h2 class="img_title">Vestidos</h2>
+            </li>
+        </ol>
+    </section>
+
+    <section class="new">
+        <div>
+            <img src="./img/img_new_skyline.png" alt="">
+        </div>
+        <div>
+            <h2 class="subtitle">
+                ¡Llegaron las ciudades!
+            </h2>
+            <p>
+                La nueva colección de Roseta este primer semestre del 2022 llega con nuevas piezas nombradas en honor a diversas ciudades del mundo.
+            </p>
+            <a href="#">Conoce más aquí</a>
+        </div>
+    </section>
 </body>
 </html>
