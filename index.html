@@ -18,17 +18,17 @@
                 <a href="#">
                     <img src="./img/img_header_logo.png" alt="" class="logo">
                 </a>
-                <ul class="menu flex ">
-                    <li class="menu__item">
+                <ul class="menu flex">
+                    <li class="light">
                         <a href="#">Home</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="light">
                         <a href="#">Catálogo</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="light">
                         <a href="#">Tienda Virtual</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="light">
                         <a href="#">Contáctanos</a>
                     </li>
                 </ul>
@@ -58,69 +58,71 @@
             <img src="./img/img_banner_v3.png" alt="">
         </div>
         <div class="banner__content">
-            <h1 class="content__title">Bienvenidas</h1>
-            <h2 class="content__subtitle">Ropa de calidad, hecha con el corazón</h2>
+            <h1 class="content__title medium">Bienvenidas</h1>
+            <h2 class="content__subtitle light">Ropa de calidad, hecha con el corazón</h2>
         </div>
     </section>
 
     <section  class="carsl">
-        <div>
+        <div class="carsl__title medium">
             <h2>Categorías</h2>
         </div>
+
+        <ol class="flex">
+            <li class="carsl__img">
+                <a href="">
+                    <img src="./img/img_carsl_kimono.png" alt="">
+                </a>
+                <h2 class="img_title light">Kimonos</h2>
+            </li>
+            <li class="carsl__img">
+                <a href="">
+                    <img src="./img/img_carsl_top.png" alt="">
+                </a>
+                <h2 class="img_title light">Blusas</h2>
+            </li>
+            <li class="carsl__img">
+                <a href="">
+                    <img src="./img/img_carsl_pant.png" alt="">
+                </a>
+                <h2 class="img_title light">Pantalones</h2>
+            </li>
+            <li class="carsl__img --outside">
+                <a href="">
+                    <img src="./img/img_carsl_outfit.png" alt="">
+                </a>
+                <h2 class="img_title light">Conjuntos</h2>
+            </li>
+            <li class="carsl__img --outside">
+                <a href="">
+                    <img src="./img/img_carsl_dress.png" alt="">
+                </a>
+                <h2 class="img_title light">Vestidos</h2>
+            </li>
+        </ol>
+
         <div>
-            <button>
+            <button class="carsl__arrows --left">
                 <img src="./img/icon_carsl_arrow_left.png" alt="">
             </button>
-            <button>
+            <button class="carsl__arrows --right">
                 <img src="./img/icon_carsl_arrow_right.png" alt="">
             </button>
         </div>
-        <ol>
-            <li>
-                <a href="#">
-                    <img src="./img/img_carsl_kimono.png" alt="">
-                </a>
-                <h2 class="img_title">Kimonos</h2>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="./img/img_carsl_top.png" alt="">
-                </a>
-                <h2 class="img_title">Blusas</h2>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="./img/img_carsl_pant.png" alt="">
-                </a>
-                <h2 class="img_title">Pantalones</h2>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="./img/img_carsl_outfit.png" alt="">
-                </a>
-                <h2 class="img_title">Conjuntos</h2>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="./img/img_carsl_dress.png" alt="">
-                </a>
-                <h2 class="img_title">Vestidos</h2>
-            </li>
-        </ol>
     </section>
 
-    <section class="new">
+    <section class="news flex">
         <div>
-            <img src="./img/img_new_skyline.png" alt="">
+            <img src="./img/img_news_skyline.png" alt="">
         </div>
-        <div>
-            <h2 class="subtitle">
+        <div class="news__info flex">
+            <h2 class="news__title medium">
                 ¡Llegaron las ciudades!
             </h2>
-            <p>
+            <p class="news__text light">
                 La nueva colección de Roseta este primer semestre del 2022 llega con nuevas piezas nombradas en honor a diversas ciudades del mundo.
             </p>
-            <a href="#">Conoce más aquí</a>
+            <a href="#" class="news__cta light">Conoce más aquí</a>
         </div>
     </section>
 </body>
