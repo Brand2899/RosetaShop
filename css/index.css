@@ -40,6 +40,18 @@ a{
     font-weight: 300;
 }
 
+.color--dark{
+    color: #643A71;
+}
+
+.color--light{
+    color: #D183C9;
+}
+
+.color--white{
+    color: #FFF;
+}
+
 .right_nav{
     width: 58%;
     justify-content: space-between;
@@ -48,10 +60,6 @@ a{
 .menu{
     width: 60%;
     justify-content: space-between;
-}
-
-.menu *{
-    color: #D183C9;
 }
 
 .left_nav{
@@ -76,12 +84,10 @@ a{
 
 .content__title{
     font-size: 72px;
-    color: #FFF;
 }
 
 .content__subtitle{
     font-size: 48px;
-    color: #FFF;
 }
 
 .carsl{
@@ -91,7 +97,6 @@ a{
 
 .carsl__title{
     font-size: 24px;
-    color: #643A71;
 }
 
 .carsl__arrows{
@@ -117,7 +122,6 @@ a{
 
 .img_title{
     font-size: 72px;
-    color: #FFF;
     position: absolute;
     bottom: 0;
 }
@@ -137,7 +141,6 @@ a{
 
 .news__title{
     font-size: 45px;
-    color: #643A71;
     text-align: center;
     width: 75%;
 }
@@ -151,25 +154,55 @@ a{
 .news__cta{
     border-width: 2px;
     font-size: 30px;
-    color: #D183C9;
     padding: 10px;
 }
 
-.footer__container{
-    justify-content: space-around;
+footer{
     background-color: #f3f3f3;
-    height: 100px;
+}
+
+.footer__container{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 45%;
 }
 
 .footer__subcontainer{
     flex-direction: column;
+    width: 10%;
+    text-align: center;
 }
 
 .footer__subtitle{
     font-size: 24px;
-    color: #643A71;
 }
 
 .footer__list{
     flex-direction: column;
+    margin-top: 5px;
+}
+
+.footer__list *{
+    width: 100px;
+    padding-top: 2px;
+}
+
+.image__link{
+    margin-top: 10px;
+    align-items: center;
+}
+
+.image__link *{
+    padding-right: 7px;
+}
+
+#divider{
+    border-color: #d183c97a;
+}
+
+.footer__links *{
+    padding-left: 10px;
+    padding-right: 10px;
 }
