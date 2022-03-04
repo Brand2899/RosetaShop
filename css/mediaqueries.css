@@ -1,0 +1,21 @@
+@media all and (max-width: 420px){
+    .logo{
+        width: 50%
+    }
+    .logo *{
+        width: 100%;
+    }
+
+    .banner__content{
+        width: 70%;
+        height: 50%;
+        bottom: 5px;
+        left: 3px;
+    }
+    .content__title{
+        font-size: 200%;
+    }
+    .content__subtitle{
+        font-size: 100%;
+    }
+}

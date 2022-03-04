@@ -62,6 +62,10 @@ a{
     justify-content: space-between;
 }
 
+.menu *{
+    font-size: 100%;
+}
+
 .left_nav{
     width: 10%;
     justify-content: space-between;
@@ -83,20 +87,21 @@ a{
 }
 
 .content__title{
-    font-size: 72px;
+    font-size: 500%;
 }
 
 .content__subtitle{
-    font-size: 48px;
+    font-size: 250%;
 }
 
 .carsl{
     position: relative;
     margin-bottom: 25px;
+    width: 100%;
 }
 
 .carsl__title{
-    font-size: 24px;
+    font-size: 150%;
 }
 
 .carsl__arrows{
@@ -132,6 +137,7 @@ a{
 
 .news{
     margin-bottom: 25px;
+    width: 100%;
 }
 
 .news__info{
@@ -167,6 +173,7 @@ footer{
     justify-content: space-around;
     align-items: flex-start;
     height: 45%;
+    width: 100%;
 }
 
 .footer__subcontainer{
