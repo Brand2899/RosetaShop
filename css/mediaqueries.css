@@ -1,4 +1,11 @@
+/*Cellphones 420px or less*/
+
 @media all and (max-width: 420px){
+
+    /*all*/
+    section{
+        margin-bottom: 40px !important;
+    }
 
     /*header*/
     .right__nav button{
@@ -23,10 +30,11 @@
     }
 
     .banner__content{
+        position: inherit;
+        left: 0;
+        bottom: 0;
         width: 70%;
         height: 50%;
-        bottom: 5px;
-        left: 3px;
         padding-bottom: 10px;
     }
 
@@ -93,6 +101,7 @@
     }
 
     .news__title{
+        width: 100%;
         position: absolute;
         top: 50%;
         font-size: 220%;
@@ -109,4 +118,41 @@
     }
 
     /*footer*/
+    .image__link{
+        display: none;
+    }
+
+    .footer__list{
+        display: none;
+    }
+
+    .footer__logo{
+        display: none;
+    }
+
+    .footer__container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__container h3{
+        font-size: 130%;
+        padding: 10px;
+    }
+
+    .footer__subcontainer{
+        width: 100%;
+    }
+
+    .footer__links{
+        flex-direction: column;
+    }
+
+    .footer__links a{
+        padding: 10px;
+    }
+
+    .image__link--copyright{
+        display: block;
+    }
 }
