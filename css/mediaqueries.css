@@ -1,14 +1,23 @@
 @media all and (max-width: 420px){
 
-    /*Header*/
-    .logo{
-        width: 50%
-    }
-    .logo *{
-        width: 100%;
+    /*header*/
+    .right__nav button{
+        display: inline;
     }
 
-    /*Banner*/
+   .menu{
+       display: none;
+   }
+
+   .left__nav{
+       width: 20%;
+   }
+
+   #icon__user{
+       display: none;
+   }
+
+    /*banner*/
     .banner__background{
         display: none;
     }
@@ -24,13 +33,14 @@
     .content__title{
         color: #643A71;
         font-size: 200%;
+        padding-left: 19px;
     }
 
     .content__subtitle{
         display: none;
     }
 
-    /*Carrusel*/
+    /*carousel*/
     .carsl__title{
         display: none;
     }
@@ -51,5 +61,14 @@
 
     .carsl__arrows{
         display: none;
+    }
+
+    /*news*/
+    .news{
+        flex-direction: column;
+    }
+
+    .news img{
+        width: 100%;
     }
 }
