@@ -21,7 +21,16 @@ a{
     text-decoration: none;
 }
 
-/* Util */
+button{
+    background-color: transparent;
+    border-style: none;
+}
+
+footer{
+    background-color: #f3f3f3;
+}
+
+/* util */
 .flex{
     display: flex;
     align-items: center;
@@ -52,10 +61,14 @@ a{
     color: #FFF;
 }
 
-/*Header*/
-.right_nav{
+/*header*/
+.right__nav{
     width: 58%;
     justify-content: space-between;
+}
+
+.right__nav button{
+    display: none;
 }
 
 .menu{
@@ -67,12 +80,12 @@ a{
     font-size: 100%;
 }
 
-.left_nav{
+.left__nav{
     width: 10%;
     justify-content: space-between;
 }
 
-/*Banner*/
+/*banner*/
 .banner{
     position: relative;
     margin-bottom: 25px;
@@ -96,7 +109,7 @@ a{
     font-size: 250%;
 }
 
-/*Carrusel*/
+/*carousel*/
 .carsl{
     position: relative;
     margin-bottom: 25px;
@@ -110,8 +123,6 @@ a{
 .carsl__arrows{
     position: absolute;
     top: 50%;
-    background-color: transparent;
-    border-style: none;
 }
 
 .--left{
@@ -138,6 +149,8 @@ a{
     display: none;
 }
 
+
+/*news*/
 .news{
     margin-bottom: 25px;
     width: 100%;
@@ -166,10 +179,7 @@ a{
     padding: 10px;
 }
 
-footer{
-    background-color: #f3f3f3;
-}
-
+/*footer*/
 .footer__container{
     padding-top: 1%;
     padding-bottom: 1%;
