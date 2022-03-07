@@ -159,8 +159,25 @@
     }
 }
 
+/*Cellphones 280px or less*/
 @media all and (max-width: 280px){
     /*header*/
+    .right__nav{
+        width: 70%;
+    }
+
+    .right__nav img{
+        width: 70%;
+    }
+
+    .left__nav{
+        width: 25%;
+    }
+
+    .left__nav img{
+        width: 90%;
+    }
+
     /*news*/
     .news__title{
         top: 45%;
