@@ -30,7 +30,7 @@ footer{
     background-color: #f3f3f3;
 }
 
-/* util */
+/*util*/
 .flex{
     display: flex;
     align-items: center;
@@ -154,6 +154,10 @@ footer{
 .news{
     margin-bottom: 25px;
     width: 100%;
+}
+
+.news__img--responsive{
+    display: none;
 }
 
 .news__info{
