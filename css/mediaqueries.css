@@ -1,4 +1,6 @@
 @media all and (max-width: 420px){
+
+    /*Header*/
     .logo{
         width: 50%
     }
@@ -6,16 +8,48 @@
         width: 100%;
     }
 
+    /*Banner*/
+    .banner__background{
+        display: none;
+    }
+
     .banner__content{
         width: 70%;
         height: 50%;
         bottom: 5px;
         left: 3px;
+        padding-bottom: 10px;
     }
+
     .content__title{
+        color: #643A71;
         font-size: 200%;
     }
+
     .content__subtitle{
-        font-size: 100%;
+        display: none;
+    }
+
+    /*Carrusel*/
+    .carsl__title{
+        display: none;
+    }
+
+    .carsl__display{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .carsl__img{
+        width: 100%;
+    }
+
+    .carsl__img img{ 
+        width: 100%;
+    }
+
+    .carsl__arrows{
+        display: none;
     }
 }
