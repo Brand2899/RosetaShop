@@ -1,4 +1,4 @@
-/*Cellphones 420px or less*/
+/*Cellphones 549px or less*/
 @media all and (max-width: 549px){
 
     /*all*/
@@ -172,7 +172,7 @@
     }
 }
 
-/*Cellphones 280px or less*/
+/*Cellphones 340px or less*/
 @media all and (max-width: 340px){
     /*header*/
     .right__nav{
@@ -198,7 +198,7 @@
     }
 }
 
-/*Tablet between 450px & 915px*/
+/*Tablet between 550px & 915px*/
 @media all and (min-width: 550px) and (max-width: 915px){
 
     /*all*/
@@ -215,6 +215,7 @@
     .menu li{
         padding-left: 5px;
         padding-right: 5px;
+        font-size: 95%;
     }
 
     .left__nav{
@@ -326,5 +327,83 @@
 
     .image__link--copyright{
         display: block;
+    }
+}
+
+/*Desktop between 916px & 2560px*/
+@media all and (min-width: 916px) and (max-width: 1919px){
+
+    /*all*/
+
+    /*header*/
+
+    /*banner*/
+    .banner__content{
+        left: 3%;
+        bottom: 3%;
+    }
+
+    .banner__content h1{
+        font-size: 350%;
+    }
+
+    .banner__content h2{
+        font-size: 200%;
+    }
+
+    /*carousel*/
+    .carsl__img{
+        margin-right: 5px;
+    }
+
+    .carsl__img img{
+        width: 100%;
+    }
+
+    .carsl__img h2{
+        font-size: 320%;
+    }
+
+    /*news*/
+    .news__info{
+        width: 100%;
+    }
+
+    .news__info *{
+        width: 95%;
+        text-align: left;
+        padding-top: 5px;
+    }
+
+    .news__title{
+        font-size: 220%;
+        color: #643A71;
+    }
+
+    .news__text{
+        font-size: 85%;
+        color: #643A71;
+    }
+
+    .news__cta{
+        font-size: 110%;
+    }
+
+    .news__img--web{
+        width: 100%;
+    }
+
+    .news img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /*footer*/
+    .footer__container a{
+        font-size: 80%;
+    }
+
+    .footer__subcontainer h3{
+        font-size: 120% !important;
     }
 }
