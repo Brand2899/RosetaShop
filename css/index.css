@@ -149,6 +149,10 @@ footer{
     display: none;
 }
 
+.carsl__cta{
+    display: none;
+}
+
 
 /*news*/
 .news{
