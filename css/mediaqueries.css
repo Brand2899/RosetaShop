@@ -47,6 +47,10 @@
     }
 
     /*carousel*/
+    .carsl{
+        position: relative;
+    }
+
     .carsl__title{
         display: none;
     }
@@ -67,6 +71,15 @@
 
     .img__title{
         font-size: 300%;
+        left: 1%;
+        bottom: 1%;
+    }
+
+    .carsl__cta{
+        display: block;
+        width: 95%;
+        padding: 10px;
+        font-size: 110%;
     }
 
     .carsl__arrows{
@@ -236,8 +249,82 @@
     }
 
     .carsl__img h2{
-        font-size: 350%;
+        width: 95%;
+        font-size: 220%;
         bottom: 1%;
         left: 2%;
+    }
+
+    /*news*/
+    .news{
+        flex-direction: column-reverse;
+    }
+
+    .news img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .news__info{
+        width: 100%;
+    }
+
+    .news__info *{
+        width: 95%;
+        text-align: left;
+        padding-top: 5px;
+    }
+
+    .news__title{
+        font-size: 220%;
+        color: #643A71;
+    }
+
+    .news__text{
+        font-size: 85%;
+        color: #643A71;
+    }
+
+    .news__cta{
+        font-size: 110%;
+    }
+
+    /*footer*/
+    .image__link{
+        display: none;
+    }
+
+    .footer__list{
+        display: none;
+    }
+
+    .footer__logo{
+        display: none;
+    }
+
+    .footer__container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__container h3{
+        font-size: 130%;
+        padding: 10px;
+    }
+
+    .footer__subcontainer{
+        width: 100%;
+    }
+
+    .footer__links{
+        flex-direction: column;
+    }
+
+    .footer__links a{
+        padding: 10px;
+    }
+
+    .image__link--copyright{
+        display: block;
     }
 }
