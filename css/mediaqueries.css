@@ -330,8 +330,8 @@
     }
 }
 
-/*Desktop between 916px & 1280px*/
-@media all and (min-width: 916px) and (max-width: 1989px){
+/*Desktop between 916px & 2560px*/
+@media all and (min-width: 916px) and (max-width: 1919px){
 
     /*all*/
 
