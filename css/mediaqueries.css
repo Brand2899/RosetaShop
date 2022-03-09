@@ -185,4 +185,40 @@
     }
 }
 
-/*Tablet */
+/*Tablet between 450px & 915px*/
+@media all and (min-width: 450px) and (max-width: 915px){
+
+    /*all*/
+    
+    /*header*/
+    .right__nav{
+        width: 68%;
+    }
+
+    .menu{
+        width: 68%;
+    }
+
+    .menu li{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .left__nav{
+        width: 15%;
+    }
+
+    /*banner*/
+    .banner__content{
+        bottom: 5%;
+        left: 3%;
+    }
+
+    .banner__content h1{
+        font-size: 350%;
+    }
+
+    .banner__content h2{
+        font-size: 200%;
+    }
+}
