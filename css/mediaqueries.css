@@ -1,5 +1,5 @@
 /*Cellphones 420px or less*/
-@media all and (max-width: 420px){
+@media all and (max-width: 549px){
 
     /*all*/
     section{
@@ -160,7 +160,7 @@
 }
 
 /*Cellphones 280px or less*/
-@media all and (max-width: 280px){
+@media all and (max-width: 340px){
     /*header*/
     .right__nav{
         width: 70%;
@@ -186,7 +186,7 @@
 }
 
 /*Tablet between 450px & 915px*/
-@media all and (min-width: 450px) and (max-width: 915px){
+@media all and (min-width: 550px) and (max-width: 915px){
 
     /*all*/
     
@@ -220,5 +220,24 @@
 
     .banner__content h2{
         font-size: 200%;
+    }
+
+    /*carsl*/
+    .carsl__display{
+        width: 100%;
+    }
+
+    .carsl__img{
+        margin-right: 3px;
+    }
+
+    .carsl__img img{
+        width: 100%;
+    }
+
+    .carsl__img h2{
+        font-size: 350%;
+        bottom: 1%;
+        left: 2%;
     }
 }
