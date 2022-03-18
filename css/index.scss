@@ -1,0 +1,39 @@
+/*variables*/
+$padding-small: 1%;
+$padding-large: 3%;
+
+$color-darkPurple: #643A71;
+$color-lightPurple: #D183C9;
+$color-white: #FFF;
+$color-lightGray: #F3F3F3;
+
+$fontWeight-medium: 500;
+$fontWeight-light: 300;
+
+$width-big: 100%;
+
+$display-flex: flex;
+$display-none: none;
+
+$justifyContent-center: center;
+$justifyContent-spaceBetween: space-between;
+$justifyContent-spaceAround: space-around;
+
+$alignItems-center: center;
+$alignItems-flexStart: flex-start;
+$alignItems-flexEnd: flex-end;
+
+/*mixings*/
+@mixin button{
+    background-color: transparent;
+    border-style: none;
+}
+
+@mixin a{
+    text-decoration: none;
+}
+
+@mixin flex{
+    display: $display-flex;
+    align-items: $alignItems-center;
+}
