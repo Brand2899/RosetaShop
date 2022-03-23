@@ -11,9 +11,11 @@ $fontWeight-medium: 500;
 $fontWeight-light: 300;
 
 $width-big: 100%;
+$width-small: 20%;
 
 $display-flex: flex;
 $display-none: none;
+$display-inline: inline;
 
 $justifyContent-center: center;
 $justifyContent-spaceBetween: space-between;
@@ -36,4 +38,16 @@ $alignItems-flexEnd: flex-end;
 @mixin flex{
     display: $display-flex;
     align-items: $alignItems-center;
+}
+
+@mixin all{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+/*nesting*/
+header.all{
+    padding: 20px;
+    height: 10%;
 }
