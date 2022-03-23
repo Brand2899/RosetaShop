@@ -64,9 +64,18 @@ const stock = [
 
 const { user_age, user_email, user_gender, user_name } = user;
 
+
 stock.forEach( product => {
     const {obj_name: name, obj_price: price, obj_img: img, obj_category: category, obj_colection: colection, obj_reference: reference, obj_color: color, obj_isPrinted: isPrinted} = product;
+
+    var printList = document.getElementById("printList");
+    var line = document.createElement("li");
+
     if(!isPrinted && price >= 90000){
-        console.log(name + " tiene un precio de: $" + price);
+        /*console.log(name + " tiene un precio de: $" + price);*/
+        var content = document.createTextNode(name + " tiene un precio de: $ " + price);
+
+        printList.appendChild(line);
+        line.appendChild(content);
     }
 })
