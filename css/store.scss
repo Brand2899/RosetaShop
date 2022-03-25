@@ -1,0 +1,137 @@
+$percent-full: 100%;
+$percent-seventyFive: 75%;
+$percent-half: 50%;
+$percent-quarter: 25%;
+$percent-tenth: 10%;
+$percent-fifth: 5%;
+$percent-min: 1%;
+
+$fontSize-small: 100%;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+html, body{
+    font-family: 'Outfit', sans-serif;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+header{
+    height: $percent-tenth;
+    padding: 20px;
+}
+
+footer{
+    background-color: #f3f3f3;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    background-color: transparent;
+    border-style: none;
+}
+
+.flex{
+    display: flex;
+}
+
+
+/*HEADER*/
+
+
+.nav{
+    justify-content: space-between;
+    align-items: center;
+    width: $percent-full;
+
+    &__left{
+        justify-content: space-between;
+        align-items: center;
+        width: $percent-half;
+
+        button{
+            display: none;
+        }
+    }
+
+    &__right{
+        justify-content: space-between;
+        align-items: center;
+        width: $percent-tenth;
+    }
+}
+
+.menu{
+    justify-content: space-between;
+    align-items: center;
+    width: $percent-seventyFive;
+
+    li{
+        font-size: $fontSize-small;
+    }
+}
+
+
+/*FOOTER*/
+
+
+.footer{
+
+    &__container{
+        justify-content: space-around;
+        align-items: flex-start;
+        padding-top: $percent-min;
+        padding-bottom: $percent-min;
+        width: $percent-full;
+        height: $percent-half;
+    }
+
+    &__subcontainer{
+        flex-direction: column;
+        text-align: center;
+        width: $percent-tenth;
+    }
+
+    &__subtitle{
+        font-size: $fontSize-small;
+    }
+
+    &__list{
+        flex-direction: column;
+        margin: $percent-min;
+        
+        li{
+            padding-top: $percent-min;
+            width: $percent-full;
+        }
+    }
+
+    &__links{
+        a{
+            padding-left: $percent-min;
+            padding-right: $percent-min;
+        }
+    }
+}
+
+.image__link{
+    align-items: center;
+    margin-top: $percent-fifth;
+
+    img{
+        padding-right: $percent-min;
+    }
+}
+
+#divider{
+    border-color: #d183c97a;
+}
