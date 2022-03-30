@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/forms.css">
+</head>
+<body>
+    <header>    
+        <nav class="nav flex">
+            <div class="nav__left flex">
+                <button>
+                    <img src="./img/icon_header_nav.png" alt="">
+                </button>
+                <a href="#"  class="logo">
+                    <img src="./img/img_header_logo.png" alt="">
+                </a>
+                <ul class="menu flex">
+                    <li class="light color--light">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="light color--light">
+                        <a href="#">Catálogo</a>
+                    </li>
+                    <li class="light color--light">
+                        <a href="#">Tienda Virtual</a>
+                    </li>
+                    <li class="light color--light">
+                        <a href="#">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <ul class="nav__right flex">
+                <li>
+                    <a href="#">
+                        <img src="./img/icon_header_search.png" alt="">
+                    </a>
+                </li>
+                <li id="icon__user">
+                    <a href="#">
+                        <img src="./img/icon_header_user.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/icon_header_shop.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <form class="form">
+        <div class="form__format flex">
+            <ul>
+                <li><h5>Nombre: </h5><input type="text" id="" placeholder="Nombre"></li>
+
+                <li><h5>Precio: </h5><input type="number" id="" placeholder="Precio"></li>
+
+                <li><input type="file" accept="image/*"></li>
+                
+                <li><input type="text" id="" placeholder="Categoría"></li>
+
+                <li><input type="text" id="" placeholder="Colección"></li>
+
+                <li><input type="text" id="" placeholder="Referencia"></li>
+
+                <li><input type="text" id="" placeholder="Color"></li>
+            </ul>
+        </div>
+    </form>
+
+    <footer>
+        <div class="footer__container flex">
+
+            <div class="footer__subcontainer flex">
+                <h3 class="footer__subtitle medium color--dark">Contacto</h3>
+                <a href="https://api.whatsapp.com/message/U3QWUJFZZUXYA1?autoload=1&app_absent=0" target="_blank" class="image__link light color--light flex">
+                    <img src="./img/icon_footer_whatsapp.png" alt=""> +57 321 6921983
+                </a>
+            </div>
+
+            <div class="footer__subcontainer flex">
+                <a href="#">
+                    <h3 class="footer__subtitle medium color--dark">Quienes somos</h3>
+                </a>
+            </div>
+
+            <div class="footer__subcontainer flex">
+                <h3 class="footer__subtitle medium color--dark">Ayuda</h3>
+                <ul class="footer__list flex">
+                    <li>
+                        <a href="#" class="light color--light">Envios</a>
+                    </li>
+                    <li>
+                        <a href="#" class="light color--light">Cambios</a>
+                    </li>
+                    <li>
+                        <a href="#" class="light color--light">Garantías</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__subcontainer flex">
+                <h3 class="footer__subtitle medium color--dark">Siguenos</h3>
+                <a href="https://www.instagram.com/rosetaclothing/" target="_blank" class="image__link light color--light flex">
+                    <img src="./img/icon_footer_copyright.png" alt=""> @rosetaclothing
+                </a>
+            </div>
+
+        </div>
+
+
+        <hr id="divider"> 
+
+
+        <div class="footer__container flex">
+            <div class="footer__logo">
+                <img src="./img/img_footer_logo.png" alt="">
+            </div>
+            <div class="footer__links flex">
+                <a href="#" class="color--light">Terminos y condiciones</a>
+                <a href="#" class="color--light">Todos los derechos reservados</a>
+            </div>
+            <div>
+                <a href="#" class="image__link image__link--copyright medium color--light flex">
+                    <img src="./img/icon_footer_copyright.png" alt="">
+                    2022 Roseta Clothing
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/forms.js"></script>
+</body>
+</html>
