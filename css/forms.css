@@ -19,7 +19,7 @@ header {
 }
 
 footer {
-  background-color: #f3f3f3;
+  background-color: #F3F3F3;
 }
 
 a {
@@ -35,6 +35,22 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.color--dark {
+  color: #643A71;
+}
+
+.color--light {
+  color: #D183C9;
 }
 
 /*HEADER*/
@@ -90,8 +106,30 @@ button {
 .form {
   padding-left: 1%;
   padding-right: 1%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.form__format li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 3%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__format h5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 5%;
+  color: #643A71;
+  height: 26px;
 }
 
 .form__format input {
@@ -99,7 +137,20 @@ button {
   width: -moz-fit-content;
   width: fit-content;
   padding: 1%;
-  margin: 1%;
+  font-family: 'Outfit', sans-serif;
+  border-radius: 8px;
+}
+
+.form__format button {
+  border-style: groove;
+  background-color: #F3F3F3;
+  padding: 0.5%;
+  width: 25%;
+  border-radius: 8px;
+}
+
+.form__format #product_img {
+  background-color: transparent;
 }
 
 /*FOOTER*/

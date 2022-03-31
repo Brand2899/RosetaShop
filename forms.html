@@ -57,22 +57,24 @@
         </nav>
     </header>
 
-    <form class="form">
+    <form class="form" id="form">
         <div class="form__format flex">
             <ul>
-                <li><h5>Nombre: </h5><input type="text" id="" placeholder="Nombre"></li>
+                <li> <h5> Nombre: </h5> <input type="text" id="product_name" name="product_name" placeholder="Nombre"> </li>
 
-                <li><h5>Precio: </h5><input type="number" id="" placeholder="Precio"></li>
+                <li> <h5> Precio: </h5> <input type="number" id="product_price" name="product_price" placeholder="Precio"> </li>
 
-                <li><input type="file" accept="image/*"></li>
+                <li> <h5> Imagen: </h5> <input type="file" accept="image/*" name="product_img" id="product_img"> </li>
                 
-                <li><input type="text" id="" placeholder="Categoría"></li>
+                <li> <h5> Categoría: </h5> <input type="text" id="product_category" name="product_category" placeholder="Categoría"> </li>
 
-                <li><input type="text" id="" placeholder="Colección"></li>
+                <li> <h5> Colección: </h5> <input type="text" id="product_colection" name="product_colection" placeholder="Colección"> </li>
 
-                <li><input type="text" id="" placeholder="Referencia"></li>
+                <li> <h5> Referencia: </h5> <input type="text" id="product_reference" name="product_reference" placeholder="Referencia"> </li>
 
-                <li><input type="text" id="" placeholder="Color"></li>
+                <li> <h5> Color: </h5> <input type="text" id="product_color" name="product_color" placeholder="Color"> </li>
+
+                <li><input type="submit" value="Subir" id="bn_upload"></li>
             </ul>
         </div>
     </form>

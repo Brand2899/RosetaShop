@@ -4,10 +4,20 @@ $percent-half: 50%;
 $percent-quarter: 25%;
 $percent-tenth: 10%;
 $percent-fifth: 5%;
+$percent-third: 3%;
 $percent-min: 1%;
 $percent-minusMin: 0.5%;
 
 $fontSize-small: 100%;
+
+$color-darkPurple: #643A71;
+$color-lightPurple: #D183C9;
+$color-lightGray: #F3F3F3;
+$color-darkWhite: #FAFAFA;
+$color-white: #FFFFFF;
+
+$fontWeight-medium: 500;
+$fontWeight-light: 300;
 
 *{
     margin: 0;
@@ -31,7 +41,7 @@ header{
 
 
 footer{
-    background-color: #f3f3f3;
+    background-color: $color-lightGray;
 }
 
 a{
@@ -47,6 +57,21 @@ button{
     display: flex;
 }
 
+.medium{
+    font-weight: $fontWeight-medium;
+}
+
+.light{
+    font-weight: $fontWeight-light;
+}
+
+.color--dark{
+    color: $color-darkPurple;
+}
+
+.color--light{
+    color: $color-lightPurple;
+}
 
 /*HEADER*/
 
@@ -88,15 +113,43 @@ button{
 .form{
     padding-left: $percent-min;
     padding-right: $percent-min;
-    padding-top: $percent-fifth;
-    padding-bottom: $percent-fifth;
+    padding-top: $percent-third;
+    padding-bottom: $percent-third;
 
     &__format{
+        li{
+            display: flex;
+            margin-bottom: $percent-third;
+            align-items: center;
+        }
+
+        h5{
+            display: flex;
+            align-items: center;
+            margin-right: $percent-fifth;
+            color: $color-darkPurple;
+            height: 26px;
+        }
 
         input{
             width: fit-content;
             padding: $percent-min;
-            margin: $percent-min;
+
+            font-family: 'Outfit', sans-serif;
+
+            border-radius: 8px;
+        }
+
+        button{
+            border-style: groove;
+            background-color: $color-lightGray;
+            padding: $percent-minusMin;
+            width: $percent-quarter;
+            border-radius: 8px;
+        }
+
+        #product_img{
+            background-color: transparent;
         }
     }
 }
