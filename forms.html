@@ -64,7 +64,7 @@
 
                 <li> <h5> Precio: </h5> <input type="number" id="product_price" name="product_price" placeholder="Precio"> </li>
 
-                <li> <h5> Imagen: </h5> <input type="file" accept="image/*" name="product_img" id="product_img"> </li>
+                <li> <h5> Imagen: </h5> <input type="file" accept="image/*" name="product_img" id="product_img" onchange="loadFile(event)"> </li>
                 
                 <li> <h5> Categoría: </h5> <input type="text" id="product_category" name="product_category" placeholder="Categoría"> </li>
 
@@ -78,6 +78,10 @@
             </ul>
         </div>
     </form>
+
+    <section class="temp_print" id="temp_print">
+        
+    </section>
 
     <footer>
         <div class="footer__container flex">
