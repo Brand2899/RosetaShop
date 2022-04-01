@@ -103,4 +103,14 @@ stock.forEach( product => {
         <h4 class="iproduct__color">${color}</h4>
     `;
     stockPrint.appendChild(individualProduct);
+
+    individualProduct.addEventListener("click", e => {
+        const lightBox = document.createElement("div");
+
+        lightBox.className = "lightbox";
+        lightBox.innerHTML = `
+            <img src="${image}">
+        `;
+        document.body.appendChild(lightBox);
+    })
 });
