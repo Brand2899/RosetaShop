@@ -86,6 +86,45 @@ button {
   font-size: 100%;
 }
 
+/*MAIN*/
+.main__filter {
+  width: 25%;
+  padding: 1%;
+}
+
+.main__filter * {
+  margin: 2%;
+}
+
+.main__filter h3 {
+  font-size: 150%;
+  color: #643A71;
+  font-weight: 500;
+}
+
+.main__filter label {
+  font-size: 100%;
+  color: #643A71;
+  font-weight: 500;
+}
+
+.main__filter button {
+  padding: 3%;
+  border-radius: 10px;
+  background-color: #643A71;
+  color: #FFFFFF;
+}
+
+.main__stockPrint {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 75%;
+}
+
+.main__stockPrint div {
+  margin: 1%;
+}
+
 /*FOOTER*/
 .footer__container {
   -ms-flex-pack: distribute;

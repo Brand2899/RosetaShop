@@ -4,9 +4,21 @@ $percent-half: 50%;
 $percent-quarter: 25%;
 $percent-tenth: 10%;
 $percent-fifth: 5%;
+$percent-third: 3%;
 $percent-min: 1%;
 
 $fontSize-small: 100%;
+$fontSize-medium: 150%;
+$fontSize-large: 200%;
+
+$color-darkPurple: #643A71;
+$color-lightPurple: #D183C9;
+$color-lightGray: #F3F3F3;
+$color-darkWhite: #FAFAFA;
+$color-white: #FFFFFF;
+
+$fontWeight-medium: 500;
+$fontWeight-light: 300;
 
 *{
     margin: 0;
@@ -77,6 +89,49 @@ button{
 
     li{
         font-size: $fontSize-small;
+    }
+}
+
+
+/*MAIN*/
+
+.main{
+
+    &__filter{
+        width: $percent-quarter;
+        padding: $percent-min;
+
+        *{
+            margin: $percent-min + $percent-min;
+        }
+
+        h3{
+            font-size: $fontSize-medium;
+            color: $color-darkPurple;
+            font-weight: $fontWeight-medium;
+        }
+
+        label{
+            font-size: $fontSize-small;
+            color: $color-darkPurple;
+            font-weight: $fontWeight-medium;
+        }
+
+        button{
+            padding: $percent-third;
+            border-radius: 10px;
+            background-color: $color-darkPurple;
+            color: $color-white;
+        }
+    }
+
+    &__stockPrint{
+        flex-wrap: wrap;
+        width: $percent-seventyFive;
+
+        div{
+            margin: $percent-min;
+        }
     }
 }
 
