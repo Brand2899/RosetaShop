@@ -57,8 +57,63 @@
         </nav>
     </header>
 
-    <section>
-        <div id="stockPrint">
+    <section class="main flex">
+        <aside class="main__filter">
+            <h3>Filtrar por</h3>
+            <ul>
+                <li>
+                    <label for="price">Precio </label>
+                    <select name="price" id="priceList">
+                        <option value="0">Seleccione una opción</option>
+                        <option value="1">Menos de $50</option>
+                        <option value="2">Entre $51 y $100</option>
+                        <option value="3">Entre $101 y $150</option>
+                        <option value="4">Entre $151 y $200</option>
+                        <option value="5">Más de $200</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="cateogory">Categoría </label>
+                    <select name="category" id="categoryList">
+                        <option value="0">Seleccione una opción</option>
+                        <option value="1">Blusa</option>
+                        <option value="2">Crop Top</option>
+                        <option value="3">Falda</option>
+                        <option value="4">Kimono</option>
+                        <option value="5">Outfit</option>
+                        <option value="6">Pantalón</option>
+                        <option value="7">Vestido</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="colection">Colección </label>
+                    <select name="colection" id="colectionList">
+                        <option value="0">Seleccione una opción</option>
+                        <option value="1">Inicial</option>
+                        <option value="2">Piedras Preciosas</option>
+                        <option value="3">Nombres</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="color">Color </label>
+                    <select name="color" id="colorList">
+                        <option value="0">Seleccione una opción</option>
+                        <option value="1">Blanco</option>
+                        <option value="2">Negro</option>
+                        <option value="3">Gris</option>
+                        <option value="4">Plateado</option>
+                        <option value="5">Verde</option>
+                        <option value="6">Verde Menta</option>
+                        <option value="7">Beige</option>
+                        <option value="8">Café</option>
+                    </select>
+                </li>
+            </ul>
+
+            <button class="filter">Filtrar</button>
+        </aside>
+
+        <div class="main__stockPrint flex" id="stockPrint">
 
         </div>
     </section>
@@ -123,6 +178,6 @@
             </div>
         </div>
     </footer>
-    <script src="./js/shop.js"></script>
+    <script src="./js/store.js"></script>
 </body>
 </html>
