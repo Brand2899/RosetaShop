@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "firebase": "^9.6.11"
+  },
+  "name": "roseta",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brand2899/RosetaShop.git"
+  },
+  "author": "Alejandro Brand Losada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brand2899/RosetaShop/issues"
+  },
+  "homepage": "https://github.com/Brand2899/RosetaShop#readme",
+  "description": ""
+}
