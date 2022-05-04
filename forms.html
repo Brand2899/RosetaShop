@@ -60,15 +60,39 @@
     <form class="form" id="form">
         <div class="form__format flex">
             <ul>
-                <li> <h5> Nombre: </h5> <input type="text" id="product_name" name="product_name" placeholder="Nombre"> </li>
+                <li> <label for="product_name">Nombre:</label> <input type="text" id="product_name" name="product_name" placeholder="Nombre"> </li>
 
-                <li> <h5> Precio: </h5> <input type="number" id="product_price" name="product_price" placeholder="Precio"> </li>
+                <li> <label for="product_price">Precio:</label> <input type="number" id="product_price" name="product_price" placeholder="Precio"> </li>
 
-                <li> <h5> Imagen: </h5> <input type="file" accept="image/*" name="product_img" id="product_img" onchange="loadFile(event)"> </li>
+                <li> <label for="product_img">Imagen:</label> <input type="file" accept="image/*" name="product_img" id="product_img" onchange="loadFile(event)"> </li>
                 
-                <li> <h5> Categoría: </h5> <input type="text" id="product_category" name="product_category" placeholder="Categoría"> </li>
+                <li>  
 
-                <li> <h5> Colección: </h5> <input type="text" id="product_colection" name="product_colection" placeholder="Colección"> </li>
+                    <label for="product_category">Categoría:</label>
+                    <select name="product_category" id="product_category">
+                        <option value="ct_blank">Seleccione una opción</option>
+                        <option value="ct_dress">Vestido</option>
+                        <option value="ct_top">Crop Top</option>
+                        <option value="ct_kimono">Kimono</option>
+                        <option value="ct_pant">Pantalón</option>
+                        <option value="ct_outfit">Conjunto</option>
+                    </select>
+
+                </li>
+
+                <li> 
+
+                    <label for="product_category">Colección:</label>
+                    <select name="product_colection" id="product_colection">
+                        <option value="cl_">Seleccione una opción</option>
+                        <option value="cl_names">Nombres</option>
+                        <option value="cl_gems">Piedras preciosas</option>
+                        <option value="cl_cities">Ciudades</option>
+                        <option value="cl_planets">Planetas</option>
+                        <option value="cl_seasons">Temporadas</option>
+                    </select>
+
+                </li>
 
                 <li> <h5> Referencia: </h5> <input type="text" id="product_reference" name="product_reference" placeholder="Referencia"> </li>
 
