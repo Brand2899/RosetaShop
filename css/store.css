@@ -87,9 +87,13 @@ button {
 }
 
 /*MAIN*/
+.main {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .main__filter {
   width: 25%;
-  padding: 1%;
 }
 
 .main__filter * {

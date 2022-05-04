@@ -96,10 +96,11 @@ button{
 /*MAIN*/
 
 .main{
+    padding-left: 20px;
+    padding-right: 20px;
 
     &__filter{
         width: $percent-quarter;
-        padding: $percent-min;
 
         *{
             margin: $percent-min + $percent-min;
