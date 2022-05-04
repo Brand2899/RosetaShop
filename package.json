@@ -1,11 +1,10 @@
 {
   "dependencies": {
-    "firebase": "^9.6.11"
+    "firebase": "^9.7.0"
   },
   "name": "roseta",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
