@@ -19,18 +19,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();
 
-const createUserForm = document.getElementById("createUserForm");
 const loginForm = document.getElementById("loginForm");
-
-createUserForm.addEventListener("submit", e =>{
-    e.preventDefault();
-    
-    const name = createUserForm.user_name.value;
-    const email = createUserForm.user_email.value;
-    const password = createUserForm.user_password.value;
-
-    createUser(name, email, password);
-});
 
 loginForm.addEventListener("submit", e =>{
     e.preventDefault();
@@ -40,28 +29,6 @@ loginForm.addEventListener("submit", e =>{
 
     login(email, password);
 });
-
-async function createUser(name, email, password){
-
-    try{
-
-        const { user } = await createUserWithEmailAndPassword(auth, email, password);
-        alert(`Bienvenido, usuario ${user.uid}`);
-
-    } catch(e){
-        //auth/weak-password
-        //auth/email-already-in-use
-
-        if(e.code === "auth/weak-password"){
-            alert("Tu contraseña debe tener al menos 6 caracteres")   
-        }
-
-        if(e.code === "auth/email-already-in-use"){
-            alert("Tu correo ya está en uso")   
-        }
-        console.log(e.code);
-    }
-}
 
 async function login(email, password){
 
