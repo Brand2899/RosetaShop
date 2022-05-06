@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar sessión | Roseta</title>
+    <title>Registrarse | Roseta</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/login.scss">
+    <link rel="stylesheet" href="./css/register.scss">
 </head>
 <body>
     <main class="main flex">
@@ -23,15 +23,17 @@
                 <h3>Imagen</h3>
             </div>
         </aside>
+
         <section class="info">
-            <form id="loginForm">
+            <form id="registerForm">
+                <input type="text" placeholder="Nombre Completo" name="user_name">
                 <input type="email" placeholder="Correo Electrónico" name="user_email">
                 <input type="password" placeholder="Contraseña" name="user_password">
-                <input type="submit" value="Login">
+                <input type="submit" value="Crear Usuario">
             </form>
         </section>
     </main>
 
-    <script src="./js/login.js" type="module"></script>
+    <script src="./js/register.js" type="module"></script>
 </body>
 </html>
