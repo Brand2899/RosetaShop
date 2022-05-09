@@ -23,12 +23,23 @@
                 <h3>Imagen</h3>
             </div>
         </aside>
-        <section class="info">
-            <form id="loginForm">
-                <input type="email" placeholder="Correo Electrónico" name="user_email">
-                <input type="password" placeholder="Contraseña" name="user_password">
-                <input type="submit" value="Login">
-            </form>
+
+        <section class="info flex">
+
+            <div class="info__linkToRegister">
+                <nav class="info__nav flex">
+                    <p>Aquí va un enlace cuando haya registro</p>
+                </nav>
+            </div>
+
+            <div class="info__infoContainer">
+                <form class="info__loginForm" id="loginForm">
+                    <input type="email" placeholder="Correo Electrónico" name="user_email">
+                    <input type="password" placeholder="Contraseña" name="user_password">
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+
         </section>
     </main>
 
