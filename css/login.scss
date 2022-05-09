@@ -11,3 +11,21 @@ html, body{
 .flex{
     display: flex;
 }
+
+.main{
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+
+}
+
+.aside{
+    width: 30%;
+
+    background-color: whitesmoke;
+}
+
+.info{
+    flex-direction: column;
+    width: 100%;
+}
