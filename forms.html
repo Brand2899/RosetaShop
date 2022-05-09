@@ -60,14 +60,22 @@
     <form class="form" id="form">
         <div class="form__format flex">
             <ul>
-                <li> <label for="product_name">Nombre:</label> <input type="text" id="product_name" name="product_name" placeholder="Nombre"> </li>
+                <li>
+                    <label for="product_name">Nombre:</label>
+                    <input type="text" id="product_name" name="product_name" placeholder="Nombre">
+                </li>
 
-                <li> <label for="product_price">Precio:</label> <input type="number" id="product_price" name="product_price" placeholder="Precio"> </li>
+                <li>
+                    <label for="product_price">Precio:</label>
+                    <input type="number" id="product_price" name="product_price" placeholder="Precio">
+                </li>
 
-                <li> <label for="product_img">Imagen:</label> <input type="file" accept="image/*" name="product_img" id="product_img" onchange="loadFile(event)"> </li>
+                <li>
+                    <label for="product_img">Imagen:</label>
+                    <input type="file" accept="image/*" name="product_img" id="product_img" multiple>
+                </li>
                 
-                <li>  
-
+                <li>
                     <label for="product_category">Categoría:</label>
                     <select name="product_category" id="product_category">
                         <option value="ct_blank">Seleccione una opción</option>
@@ -77,28 +85,33 @@
                         <option value="ct_pant">Pantalón</option>
                         <option value="ct_outfit">Conjunto</option>
                     </select>
-
                 </li>
 
                 <li> 
-
-                    <label for="product_category">Colección:</label>
+                    <label for="product_colection">Colección:</label>
                     <select name="product_colection" id="product_colection">
-                        <option value="cl_">Seleccione una opción</option>
+                        <option value="cl_blank">Seleccione una opción</option>
                         <option value="cl_names">Nombres</option>
                         <option value="cl_gems">Piedras preciosas</option>
                         <option value="cl_cities">Ciudades</option>
                         <option value="cl_planets">Planetas</option>
                         <option value="cl_seasons">Temporadas</option>
                     </select>
-
                 </li>
 
-                <li> <h5> Referencia: </h5> <input type="text" id="product_reference" name="product_reference" placeholder="Referencia"> </li>
+                <li>
+                    <label for="product_reference">Referencia:</label>
+                    <input type="text" id="product_reference" name="product_reference" placeholder="Referencia">
+                </li>
 
-                <li> <h5> Color: </h5> <input type="text" id="product_color" name="product_color" placeholder="Color"> </li>
+                <li>
+                    <label for="product_color">Color:</label>
+                    <input type="text" id="product_color" name="product_color" placeholder="Color">
+                </li>
 
-                <li><input type="submit" value="Subir" id="bn_upload"></li>
+                <li>
+                    <input type="submit" value="Subir" id="bn_upload">
+                </li>
             </ul>
         </div>
     </form>
@@ -168,6 +181,6 @@
         </div>
     </footer>
 
-    <script src="./js/forms.js"></script>
+    <script src="./js/forms.js" type="module"></script>
 </body>
 </html>
