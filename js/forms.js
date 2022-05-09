@@ -2,6 +2,7 @@
 import { async } from "@firebase/util";
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
 
 // Your web app's Firebase configuration
 import firebaseConfig from "./utils/firebase";
@@ -11,6 +12,7 @@ import { addProductToStock, uploadImages } from "./scripts/formsScript";
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+const storage = getStorage(app);
 
 const form = document.getElementById("form");
 const bn_upload = document.getElementById("bn_upload");
@@ -31,18 +33,19 @@ bn_upload.addEventListener("click", async (e) =>{
     const product_reference = form.product_reference.value;
     const product_color = form.product_color.value;
 
-    if(product_img.lenght){
-        console.log("hay imagenes");
-        await uploadImages(product_img);
-        
+    let gallery = [];
+
+    if(product_img.length){
+        const images = await uploadImages(storage, [...product_img]); 
+        gallery = await Promise.all(images);
     }
  
     const newProduct = {
         product_name,
         product_price,
-       //product_img,
-       product_category,
-       product_colection,
+        product_img: gallery,
+        product_category,
+        product_colection,
         product_reference,
         product_color
     };
