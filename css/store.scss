@@ -73,6 +73,10 @@ button{
         button{
             display: none;
         }
+
+        a{
+            color: $color-lightPurple;
+        }
     }
 
     &__right{
@@ -149,6 +153,14 @@ button{
         padding-bottom: $percent-min;
         width: $percent-full;
         height: $percent-half;
+
+        a{
+            padding-left: $percent-min;
+            padding-right: $percent-min;
+            color: $color-lightPurple;
+            font-weight: $fontWeight-light;
+            font-size: $fontSize-small;
+        }
     }
 
     &__subcontainer{
@@ -168,13 +180,6 @@ button{
         li{
             padding-top: $percent-min;
             width: $percent-full;
-        }
-    }
-
-    &__links{
-        a{
-            padding-left: $percent-min;
-            padding-right: $percent-min;
         }
     }
 }
