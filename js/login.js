@@ -1,11 +1,5 @@
 // Import the functions you need from the SDKs you need
-import { async } from "@firebase/util";
-import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
-
-// Your web app's Firebase configuration
-import firebaseConfig from "./utils/firebase";
-
+import { app, auth, db } from "./app";
 import { login } from "./scripts/loginScript";
 
 

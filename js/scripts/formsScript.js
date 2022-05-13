@@ -4,7 +4,7 @@ import { ref, uploadBytes,getDownloadURL } from "firebase/storage";
 async function addProductToStock(db, product){
     try{
         await addDoc(collection(db, "products"), product);
-        console.log("productos añadidos!")
+        //console.log("productos añadidos!")
     } catch (e) {
         console.log(e);
     }

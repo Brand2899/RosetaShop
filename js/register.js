@@ -1,19 +1,5 @@
-// Import the functions you need from the SDKs you need
-import { async } from "@firebase/util";
-import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
-
-// Your web app's Firebase configuration
-import firebaseConfig from "./utils/firebase";
-
+import { auth, db } from "./app";
 import { addUserInfo, createUser } from "./scripts/registerScript";
-
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const auth = getAuth();
-const db = getFirestore(app);
 
 const registerForm = document.getElementById("registerForm");
 
