@@ -6,6 +6,7 @@ const stockPrint = document.getElementById("stockPrint");
 async function loadProducts(){
     try{
         const stockProducts = await getProducts(db);
+        stockPrint.innerHTML = "";
         
         stockProducts.forEach( product => {
             renderProduct(product);
@@ -22,7 +23,7 @@ function renderProduct( iproduct ){
     individualProduct.className = "iproduct";
     individualProduct.setAttribute("href", `./store.html?=${iproduct.id}`);
 
-    const images = iproduct.images ? items.images[0] : "https://firebasestorage.googleapis.com/v0/b/rosetashop-157e2.appspot.com/o/products%2Fimages%2Fimg_general_placeholder.jpg?alt=media&token=f88f5f6f-7729-4680-94be-2d9b49f82bd4";
+    const images = iproduct.product_img ? iproduct.product_img[0] : "https://firebasestorage.googleapis.com/v0/b/rosetashop-157e2.appspot.com/o/products%2Fimages%2Fimg_general_placeholder.jpg?alt=media&token=f88f5f6f-7729-4680-94be-2d9b49f82bd4";
 
     const { product_name: name, product_price: price, product_reference: reference, product_color: color, product_colection: colection, product_category: category } = iproduct;
 
