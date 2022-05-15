@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingresar producto nuevo | Roseta</title>
+    <title>Noticias | Roseta</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/forms.scss">
+    <link rel="stylesheet" href="./css/news.scss">
 </head>
 <body>
     <header>    
@@ -57,68 +57,8 @@
         </nav>
     </header>
 
-    <form class="form" id="form">
-        <div class="form__format flex">
-            <ul>
-                <li>
-                    <label for="product_name">Nombre:</label>
-                    <input type="text" id="product_name" name="product_name" placeholder="Nombre">
-                </li>
-
-                <li>
-                    <label for="product_price">Precio:</label>
-                    <input type="number" id="product_price" name="product_price" placeholder="Precio">
-                </li>
-
-                <li>
-                    <label for="product_img">Imagen:</label>
-                    <input type="file" accept="image/*" name="product_img" id="product_img" multiple>
-                </li>
-                
-                <li>
-                    <label for="product_category">Categoría:</label>
-                    <select name="product_category" id="product_category">
-                        <option value="ct_blank">Seleccione una opción</option>
-                        <option value="ct_dress">Vestido</option>
-                        <option value="ct_top">Crop Top</option>
-                        <option value="ct_kimono">Kimono</option>
-                        <option value="ct_pant">Pantalón</option>
-                        <option value="ct_outfit">Conjunto</option>
-                        <option value="ct_skirt">Falda</option>
-                    </select>
-                </li>
-
-                <li> 
-                    <label for="product_colection">Colección:</label>
-                    <select name="product_colection" id="product_colection">
-                        <option value="cl_blank">Seleccione una opción</option>
-                        <option value="cl_names">Nombres</option>
-                        <option value="cl_gems">Piedras preciosas</option>
-                        <option value="cl_cities">Ciudades</option>
-                        <option value="cl_planets">Planetas</option>
-                        <option value="cl_seasons">Temporadas</option>
-                    </select>
-                </li>
-
-                <li>
-                    <label for="product_reference">Referencia:</label>
-                    <input type="text" id="product_reference" name="product_reference" placeholder="Referencia">
-                </li>
-
-                <li>
-                    <label for="product_color">Color:</label>
-                    <input type="text" id="product_color" name="product_color" placeholder="Color">
-                </li>
-
-                <li>
-                    <input type="submit" value="Subir" id="bn_upload">
-                </li>
-            </ul>
-        </div>
-    </form>
-
-    <section class="temp_print" id="temp_print">
-        
+    <section>
+        <h1>Aquí definitivamente hay noticias</h1>
     </section>
 
     <footer>
@@ -182,6 +122,6 @@
         </div>
     </footer>
 
-    <script src="./js/forms.js" type="module"></script>
+    <script src="./js/news.js" type="module"></script>
 </body>
 </html>
