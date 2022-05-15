@@ -6,9 +6,10 @@ $percent-tenth: 10%;
 $percent-fifth: 5%;
 $percent-third: 3%;
 $percent-min: 1%;
-$percent-minusMin: 0.5%;
 
 $fontSize-small: 100%;
+$fontSize-medium: 150%;
+$fontSize-large: 200%;
 
 $color-darkPurple: #643A71;
 $color-lightPurple: #D183C9;
@@ -38,10 +39,8 @@ header{
     padding: 20px;
 }
 
-
-
 footer{
-    background-color: $color-lightGray;
+    background-color: #f3f3f3;
 }
 
 a{
@@ -55,22 +54,6 @@ button{
 
 .flex{
     display: flex;
-}
-
-.medium{
-    font-weight: $fontWeight-medium;
-}
-
-.light{
-    font-weight: $fontWeight-light;
-}
-
-.color--dark{
-    color: $color-darkPurple;
-}
-
-.color--light{
-    color: $color-lightPurple;
 }
 
 /*HEADER*/
@@ -88,6 +71,10 @@ button{
 
         button{
             display: none;
+        }
+
+        a{
+            color: $color-lightPurple;
         }
     }
 
@@ -143,7 +130,7 @@ button{
         button{
             border-style: groove;
             background-color: $color-lightGray;
-            padding: $percent-minusMin;
+            padding: 10px;
             width: $percent-quarter;
             border-radius: 8px;
         }
@@ -153,6 +140,7 @@ button{
         }
     }
 }
+
 
 /*FOOTER*/
 
@@ -166,6 +154,14 @@ button{
         padding-bottom: $percent-min;
         width: $percent-full;
         height: $percent-half;
+
+        a{
+            padding-left: $percent-min;
+            padding-right: $percent-min;
+            color: $color-lightPurple;
+            font-weight: $fontWeight-light;
+            font-size: $fontSize-small;
+        }
     }
 
     &__subcontainer{
@@ -176,6 +172,7 @@ button{
 
     &__subtitle{
         font-size: $fontSize-small;
+        color: $color-darkPurple;
     }
 
     &__list{
@@ -185,13 +182,6 @@ button{
         li{
             padding-top: $percent-min;
             width: $percent-full;
-        }
-    }
-
-    &__links{
-        a{
-            padding-left: $percent-min;
-            padding-right: $percent-min;
         }
     }
 }
