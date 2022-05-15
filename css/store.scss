@@ -137,11 +137,16 @@ button{
         div{
             margin: $percent-min;
         }
-    }
 
-    .iproduct{
-        &__image{
-            height: 20px;
+        .iproduct{
+            background-color: beige;
+            padding: 10px 20px;
+            display: block;
+
+            &__img{
+                width: 100%;
+                height: 300px;
+            }
         }
     }
 }

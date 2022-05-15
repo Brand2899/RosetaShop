@@ -1,12 +1,6 @@
 // Import the functions you need from the SDKs you need
-import { app, auth, db } from "./app";
-
+import { storage, db } from "./app";
 import { addProductToStock, uploadImages } from "./scripts/formsScript";
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-const storage = getStorage(app);
 
 const form = document.getElementById("form");
 const bn_upload = document.getElementById("bn_upload");
