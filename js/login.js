@@ -1,11 +1,6 @@
 // Import the functions you need from the SDKs you need
-import { app, auth, db } from "./app";
+import { auth } from "./app";
 import { login } from "./scripts/loginScript";
-
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const auth = getAuth();
 
 const loginForm = document.getElementById("loginForm");
 

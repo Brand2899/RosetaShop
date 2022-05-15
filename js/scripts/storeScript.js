@@ -1,11 +1,18 @@
-import { collection, getDoc } from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
 
 async function getProducts(db){
     try{
         const collectionRef = collection(db, "products");
-        const result = await getDocs(collectionRef);
+        const { docs } = await getDocs(collectionRef);
 
-        console.log(result);
+        const products = docs.map((doc) => {
+            return{
+                ...doc.data(),
+                id: doc.id,
+            };
+        });
+
+        return products;
     } catch(e){
         console.log(e);
     }
