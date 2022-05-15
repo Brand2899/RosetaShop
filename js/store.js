@@ -3,6 +3,10 @@ import { getProducts } from "./scripts/storeScript";
 
 const stockPrint = document.getElementById("stockPrint");
 
+const ctFilter = document.getElementById("categoryFilter");
+
+let displayedProducts = [];
+
 async function loadProducts(){
     try{
         const stockProducts = await getProducts(db);
@@ -12,6 +16,7 @@ async function loadProducts(){
             renderProduct(product);
         });
 
+        displayedProducts = stockProducts;
     } catch(e){
         console.log(e);
     }
@@ -39,5 +44,24 @@ function renderProduct( iproduct ){
     
     stockPrint.appendChild(individualProduct);
 }
+
+function filterBy(){
+    const ctSelectedFilter = ctFilter.value;
+    const filteredProducts = displayedProducts.filter((product) => product.product_category === ctSelectedFilter);
+
+    if(filteredProducts.length === 0){
+        loadProducts();
+    }
+
+    stockPrint.innerHTML = "";
+
+    filteredProducts.forEach( product => {
+        renderProduct(product);
+    });
+}
+
+ctFilter.addEventListener("change", e => {
+    filterBy();
+});
 
 loadProducts();
