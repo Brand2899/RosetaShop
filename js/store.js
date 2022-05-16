@@ -31,7 +31,7 @@ function renderProduct( iproduct ){
     const individualProduct = document.createElement("a");
 
     individualProduct.className = "iproduct";
-    individualProduct.setAttribute("href", `./store.html?=${iproduct.id}`);
+    individualProduct.setAttribute("href", `./product.html?id=${iproduct.id}`);
 
     const images = iproduct.product_img ? iproduct.product_img[0] : "https://firebasestorage.googleapis.com/v0/b/rosetashop-157e2.appspot.com/o/products%2Fimages%2Fimg_general_placeholder.jpg?alt=media&token=f88f5f6f-7729-4680-94be-2d9b49f82bd4";
 
@@ -45,7 +45,7 @@ function renderProduct( iproduct ){
     <img class="iproduct__img" src="${images}">
     <div class="iproduct__info">
         <h1>${name}</h1>
-        <h2>${price}</h2>
+        <h2>$${price}</h2>
     </div>
     <h4 class="iproduct__color">${color}</h4>
     ${buttonAddCart}
