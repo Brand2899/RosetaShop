@@ -37,7 +37,7 @@ function renderProduct( iproduct ){
 
     const { product_name: name, product_price: price, product_reference: reference, product_color: color, product_colection: colection, product_category: category } = iproduct;
 
-    const isProductAddedToCart = cart.some((productCart) => productCart.id === iproduct.id);
+   const isProductAddedToCart = cart.some((productCart) => productCart.id === iproduct.id);
 
     const buttonAddCart = isProductAddedToCart ? '<button class="iproduct__button" disabled> Producto añadido </button>' : '<button class="iproduct__button"> Añadir a carrito </button>';
 
@@ -83,6 +83,7 @@ function getMyCart(){
     return myCart ? JSON.parse(myCart) : [];
 }
 
+
 function filterBy(){
     const ctSelectedFilter = ctFilter.value;
     const filteredProducts = displayedProducts.filter((product) => product.product_category === ctSelectedFilter);
@@ -102,12 +103,14 @@ ctFilter.addEventListener("change", e => {
     filterBy();
 });
 
+loadProducts();
+
 onAuthStateChanged(auth, async (user) => {
     if(user){
-        userLogged = user;
-        cart = await getFirebaseCart(db, userLogged.uid);
+        /*userLogged = user;
+        cart = await getFirebaseCart(db, userLogged.uid);*/
     } else {
-        cart = getMyCart();
+        /*cart = getMyCart();*/
     }
     loadProducts();
 });

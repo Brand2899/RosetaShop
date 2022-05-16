@@ -1,5 +1,5 @@
-import { doc, getDoc } from "firebase/firestore";
 import { db } from "./app";
+import { getProduct } from "./scripts/productsScript";
 
 const productInfoSection = document.getElementById("productInfo");
 const productAssetSection = document.getElementById("productAsset");
@@ -15,12 +15,11 @@ function getParam(param){
     }
 }
 
-async function getProduct(){
+async function loadProduct(){
     try{
         const productId = getParam("id");
-        const docRef = doc(db, "products", productId);
-        const docSnap = await getDoc(docRef);
-        const data = docSnap.data();
+
+        const data = await getProduct(db, productId);
 
         const product = {
             ...data,
@@ -34,7 +33,6 @@ async function getProduct(){
 }
 
 function renderProduct(product){
-    let counter = 1;
     let aditionalImages = 0;
 
     if(product.product_img.length === 2){
@@ -129,18 +127,36 @@ function renderProduct(product){
         break;
     }
 
+    let counter = 1;
+
     productInfoSection.innerHTML = `
         <h1 class="product__name">${product.product_name}</h1>
         <h2 class="product__price">$${product.product_price}</h2>
         <h4 class="product__color">${product.product_color}</h4>
         <h5 class="product__reference">${product.product_reference}</h5>
         <div class="product__countBtn flex">
-            <button class="subButton" id="subBtn"> - </button>
+            <button class="subButton"> - </button>
             <h4 class="counter">${counter}</h4>
-            <button class="addButton" id="addBtn"> + </button>
+            <button class="addButton"> + </button>
         </div>
         <button class="product__cart">Añadir al carrito</button>
     `;
+
+    const counterTag = productInfoSection.querySelector(".counter");
+
+    const addButton = productInfoSection.querySelector(".addButton");
+    addButton.addEventListener("click", e => {
+        counter++;
+        counterTag.innerText = counter;
+    });
+
+    const subButton = productInfoSection.querySelector(".subButton");
+    subButton.addEventListener("click", e => {
+        if(counter > 1){
+            counter--;
+            counterTag.innerText = counter;
+        }
+    });
 }
 
-getProduct();
+loadProduct();
