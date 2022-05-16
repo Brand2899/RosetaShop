@@ -1,0 +1,1 @@
+{"mappings":"AAAA;;;;;;AAMA;;;;AAIA","sources":["css/register.scss"],"sourcesContent":["*{\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: content-box;\r\n}\r\n\r\nhtml, body{\r\n    font-family: 'Outfit', sans-serif;\r\n}\r\n\r\n.flex{\r\n    display: flex;\r\n}\r\n"],"names":[],"version":3,"file":"register.b04a814d.css.map","sourceRoot":"/__parcel_source_root/"}

@@ -1,7 +1,6 @@
 import { auth, db } from "./app";
 import { getProducts } from "./scripts/storeScript";
 import { createFirebaseCart, getFirebaseCart } from "./cart";
-import { async } from "@firebase/util";
 import { onAuthStateChanged } from "firebase/auth";
 
 const stockPrint = document.getElementById("stockPrint");

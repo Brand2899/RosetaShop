@@ -1,0 +1,15 @@
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: Outfit, sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+/*# sourceMappingURL=register.b04a814d.css.map */
