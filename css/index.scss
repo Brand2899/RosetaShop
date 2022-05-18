@@ -43,7 +43,8 @@ ol, ul{
 
 header{
     height: 50px;
-    padding: 20px;
+    padding: 20px 20px 0;
+    margin-bottom: 50px;
 }
 
 footer{
@@ -114,6 +115,7 @@ button{
 
 
 .banner{
+    margin: 0 20px;
     position: relative;
 
     &__background{
@@ -142,6 +144,123 @@ button{
             color: $color-white;
         }
     }
+}
+
+
+.carsl{
+    position: relative;
+
+    margin: 50px 20px 0;
+
+    &__title{
+        margin-bottom: 10px;
+
+        font-size: $fontSize-medium;
+        font-weight: $fontWeight-medium;
+        color: $color-darkPurple;
+    }
+
+    &__display{
+        justify-content: space-around;
+    }
+
+    &__img{
+        position: relative;
+
+        img{
+            width: 100%;
+            object-fit: contain;
+        }
+
+        h2{
+            padding: 20px 10px;
+
+            position: absolute;
+
+            bottom: 0;
+            left: 0;
+
+            font-size: $fontSize-medium;
+            font-weight: $fontWeight-light;
+            color: $color-white;
+        }
+    }
+
+    &__cta{
+        display: none;
+        margin-top: 10px;
+
+        a{
+            font-size: $fontSize-small;
+            font-weight: $fontWeight-light;
+            color: $color-lightPurple;
+        }
+    }
+
+    &__arrows{
+        position: absolute;
+        top: 50%;
+    }
+}
+
+.--outside{
+    display: none;
+}
+
+.--left{
+    left: 20px;
+}
+
+.--right{
+    right: 20px;
+}
+
+
+.news{
+    margin: 50px 20px;
+
+    &__info{
+        width: $percent-quarter;
+        padding-left: 30px;
+
+        flex-direction: column;
+        justify-content: center;
+
+        h2{
+            font-size: $fontSize-medium;
+            font-weight: $fontWeight-medium;
+            color: $color-darkPurple;
+        }
+
+        p{
+            width: $percent-seventyFive;
+
+            font-size: $fontSize-small;
+            font-weight: $fontWeight-light;
+            color: $color-darkPurple;
+        }
+
+        a{
+            padding: 10px 0;
+
+            font-size: $fontSize-small;
+            font-weight: $fontWeight-light;
+            color: $color-lightPurple;
+        }
+    }
+
+    &__img{
+        width: $percent-seventyFive;
+
+        img{
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+.--responsive{
+    display: none;
 }
 
 

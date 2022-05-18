@@ -20,7 +20,8 @@ ol, ul {
 
 header {
   height: 50px;
-  padding: 20px;
+  margin-bottom: 50px;
+  padding: 20px 20px 0;
 }
 
 footer {
@@ -81,6 +82,7 @@ button {
 }
 
 .banner {
+  margin: 0 20px;
   position: relative;
 }
 
@@ -105,6 +107,113 @@ button {
   color: #fff;
   font-size: 30px;
   font-weight: 300;
+}
+
+.carsl {
+  margin: 50px 20px 0;
+  position: relative;
+}
+
+.carsl__title {
+  color: #643a71;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.carsl__display {
+  justify-content: space-around;
+}
+
+.carsl__img {
+  position: relative;
+}
+
+.carsl__img img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.carsl__img h2 {
+  color: #fff;
+  padding: 20px 10px;
+  font-size: 30px;
+  font-weight: 300;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.carsl__cta {
+  margin-top: 10px;
+  display: none;
+}
+
+.carsl__cta a {
+  color: #d183c9;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.carsl__arrows {
+  position: absolute;
+  top: 50%;
+}
+
+.--outside {
+  display: none;
+}
+
+.--left {
+  left: 20px;
+}
+
+.--right {
+  right: 20px;
+}
+
+.news {
+  margin: 50px 20px;
+}
+
+.news__info {
+  width: 25%;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+}
+
+.news__info h2 {
+  color: #643a71;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.news__info p {
+  width: 75%;
+  color: #643a71;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.news__info a {
+  color: #d183c9;
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.news__img {
+  width: 75%;
+}
+
+.news__img img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.--responsive {
+  display: none;
 }
 
 .footer__container {
