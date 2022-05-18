@@ -30,6 +30,10 @@ html, body{
     font-family: 'Outfit', sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 .flex{
     display: flex;
 }
@@ -52,6 +56,10 @@ html, body{
     &__header{
         flex-direction: column;
         justify-content: center;
+
+        a{
+            width: fit-content;
+        }
 
         img{
             width: 100px;
@@ -82,7 +90,67 @@ html, body{
     }
 
     &__info{
+        position: relative;
+
         width: 70%;
         height: 800px;
+
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__registerForm{
+        flex-direction: column;
+
+        label{
+            margin: 25px 0 5px;
+            font-size: $fontSize-small;
+            color: $color-darkPurple;
+        }
+
+        input{
+            width: 400px;
+
+            padding: 15px 25px;
+            margin-bottom: 25px;
+
+            font-family: 'Outfit', sans-serif;
+            font-size: $fontSize-small;
+
+            border: none;
+            border-radius: 10px;
+
+            background-color: $color-lightGray;
+        }
+    }
+
+    &__toLogin{
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        margin-right: 30px;
+
+        span{
+            font-size: $fontSize-small;
+            color: $color-darkPurple;
+
+            margin-right: 5px;
+        }
+
+        a{
+            font-size: $fontSize-small;
+            color: $color-lightPurple;
+        }
+    }
+
+    #submit{
+        margin-top: 20px;
+
+        background-color: $color-lightPurple;
+
+        font-weight: $fontWeight-medium;
+        color: $color-white;
     }
 }
