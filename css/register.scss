@@ -1,3 +1,25 @@
+$percent-full: 100%;
+$percent-seventyFive: 75%;
+$percent-half: 50%;
+$percent-quarter: 25%;
+$percent-tenth: 10%;
+$percent-fifth: 5%;
+$percent-third: 3%;
+$percent-min: 1%;
+
+$fontSize-small: 100%;
+$fontSize-medium: 150%;
+$fontSize-large: 200%;
+
+$color-darkPurple: #643A71;
+$color-lightPurple: #D183C9;
+$color-lightGray: #F3F3F3;
+$color-darkWhite: #FAFAFA;
+$color-white: #FFFFFF;
+
+$fontWeight-medium: 500;
+$fontWeight-light: 300;
+
 *{
     margin: 0;
     padding: 0;
@@ -10,4 +32,57 @@ html, body{
 
 .flex{
     display: flex;
+}
+
+.main{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    &__aside{
+        background-color: #ffc8ae;
+
+        width: 30%;
+        height: 935px; 
+
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    &__header{
+        flex-direction: column;
+        justify-content: center;
+
+        img{
+            width: 100px;
+
+            margin: 20px 50px 10px 50px;
+        }
+
+        h1{
+            color: #e2642a;
+            font-weight: 800;
+            font-size: $fontSize-large;
+
+            margin: 10px 50px 0px 50px;
+        }
+
+        h4{
+            color: #e2642a;
+            font-weight: $fontWeight-light;
+
+            margin: 0px 50px 90px 50px;
+        }
+    }
+
+    &__coverImg{
+        img{
+            width: 100%;
+        }
+    }
+
+    &__info{
+        width: 70%;
+        height: 800px;
+    }
 }

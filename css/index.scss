@@ -7,9 +7,9 @@ $percent-fifth: 5%;
 $percent-third: 3%;
 $percent-min: 1%;
 
-$fontSize-small: 100%;
-$fontSize-medium: 150%;
-$fontSize-large: 200%;
+$fontSize-small: 15px;
+$fontSize-medium: 30px;
+$fontSize-large: 60px;
 
 $color-darkPurple: #643A71;
 $color-lightPurple: #D183C9;
@@ -109,6 +109,40 @@ button{
     }
 }
 
+
+/*MAIN*/
+
+
+.banner{
+    position: relative;
+
+    &__background{
+        img{
+            width: 100%;
+        }
+    }
+
+    &__content{
+        padding: 20px;
+
+        position: absolute;
+
+        bottom: 0;
+        left: 0;
+
+        h1{
+            font-size: $fontSize-large;
+            font-weight: $fontWeight-medium;
+            color: $color-white;
+        }
+
+        h2{
+            font-size: $fontSize-medium;
+            font-weight: $fontWeight-light;
+            color: $color-white;
+        }
+    }
+}
 
 
 /*FOOTER*/

@@ -12,4 +12,50 @@ html, body {
   display: flex;
 }
 
+.main {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__aside {
+  width: 30%;
+  height: 935px;
+  background-color: #ffc8ae;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.main__header {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main__header img {
+  width: 100px;
+  margin: 20px 50px 10px;
+}
+
+.main__header h1 {
+  color: #e2642a;
+  margin: 10px 50px 0;
+  font-size: 200%;
+  font-weight: 800;
+}
+
+.main__header h4 {
+  color: #e2642a;
+  margin: 0 50px 90px;
+  font-weight: 300;
+}
+
+.main__coverImg img {
+  width: 100%;
+}
+
+.main__info {
+  width: 70%;
+  height: 800px;
+}
+
 /*# sourceMappingURL=register.b04a814d.css.map */
