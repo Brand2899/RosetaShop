@@ -1,3 +1,25 @@
+$percent-full: 100%;
+$percent-seventyFive: 75%;
+$percent-half: 50%;
+$percent-quarter: 25%;
+$percent-tenth: 10%;
+$percent-fifth: 5%;
+$percent-third: 3%;
+$percent-min: 1%;
+
+$fontSize-small: 100%;
+$fontSize-medium: 150%;
+$fontSize-large: 200%;
+
+$color-darkPurple: #643A71;
+$color-lightPurple: #D183C9;
+$color-lightGray: #F3F3F3;
+$color-darkWhite: #FAFAFA;
+$color-white: #FFFFFF;
+
+$fontWeight-medium: 500;
+$fontWeight-light: 300;
+
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +30,10 @@ html, body{
     font-family: 'Outfit', sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 .flex{
     display: flex;
 }
@@ -15,17 +41,116 @@ html, body{
 .main{
     flex-direction: row;
     align-items: center;
-    height: 100%;
+    justify-content: center;
 
-}
+    &__aside{
+        background-color: #ffecae;
 
-.aside{
-    width: 30%;
+        width: 30%;
+        height: 935px; 
 
-    background-color: whitesmoke;
-}
+        flex-direction: column;
+        justify-content: space-around;
+    }
 
-.info{
-    flex-direction: column;
-    width: 100%;
+    &__header{
+        flex-direction: column;
+        justify-content: center;
+
+        a{
+            width: fit-content;
+        }
+
+        img{
+            width: 100px;
+
+            margin: 20px 50px 10px 50px;
+        }
+
+        h1{
+            color: goldenrod;
+            font-weight: 800;
+            font-size: $fontSize-large;
+
+            margin: 10px 50px 0px 50px;
+        }
+
+        h4{
+            color: goldenrod;
+            font-weight: $fontWeight-light;
+
+            margin: 0px 50px 90px 50px;
+        }
+    }
+
+    &__coverImg{
+        img{
+            width: 100%;
+        }
+    }
+
+    &__info{
+        position: relative;
+
+        width: 70%;
+        height: 800px;
+
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__loginForm{
+        flex-direction: column;
+
+        label{
+            margin: 25px 0 5px;
+            font-size: $fontSize-small;
+            color: $color-darkPurple;
+        }
+
+        input{
+            width: 400px;
+
+            padding: 15px 25px;
+            margin-bottom: 25px;
+
+            font-family: 'Outfit', sans-serif;
+            font-size: $fontSize-small;
+
+            border: none;
+            border-radius: 10px;
+
+            background-color: $color-lightGray;
+        }
+    }
+
+    &__toRegister{
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        margin-right: 30px;
+
+        span{
+            font-size: $fontSize-small;
+            color: $color-darkPurple;
+
+            margin-right: 5px;
+        }
+
+        a{
+            font-size: $fontSize-small;
+            color: $color-lightPurple;
+        }
+    }
+
+    #submit{
+        margin-top: 20px;
+
+        background-color: $color-lightPurple;
+
+        font-weight: $fontWeight-medium;
+        color: $color-white;
+    }
 }
