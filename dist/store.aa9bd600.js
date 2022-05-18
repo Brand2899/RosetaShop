@@ -529,7 +529,6 @@ function hmrAcceptRun(bundle, id) {
 var _app = require("./app");
 var _storeScript = require("./scripts/storeScript");
 var _cart = require("./cart");
-var _util = require("@firebase/util");
 var _auth = require("firebase/auth");
 const stockPrint = document.getElementById("stockPrint");
 const ctFilter = document.getElementById("categoryFilter");
@@ -606,7 +605,7 @@ _auth.onAuthStateChanged(_app.auth, async (user)=>{
     loadProducts();
 });
 
-},{"./app":"5AKj5","./scripts/storeScript":"8mqIg","./cart":"dGOwQ","@firebase/util":"ePiK6","firebase/auth":"drt1f"}],"5AKj5":[function(require,module,exports) {
+},{"./app":"5AKj5","./scripts/storeScript":"8mqIg","./cart":"dGOwQ","firebase/auth":"drt1f"}],"5AKj5":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "app", ()=>app

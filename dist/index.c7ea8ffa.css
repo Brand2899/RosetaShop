@@ -77,7 +77,34 @@ button {
 }
 
 .menu li {
-  font-size: 100%;
+  font-size: 15px;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner__background img {
+  width: 100%;
+}
+
+.banner__content {
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.banner__content h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.banner__content h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
 }
 
 .footer__container {
@@ -93,7 +120,7 @@ button {
   color: #d183c9;
   padding-left: 1%;
   padding-right: 1%;
-  font-size: 100%;
+  font-size: 15px;
   font-weight: 300;
 }
 
@@ -105,7 +132,7 @@ button {
 
 .footer__subtitle {
   color: #643a71;
-  font-size: 100%;
+  font-size: 15px;
 }
 
 .footer__list {
